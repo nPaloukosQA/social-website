@@ -6,5 +6,5 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import javax.persistence.EntityNotFoundException;
 
 @ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "That post doesn't exist")
-public class NoteNotFoundException extends EntityNotFoundException {
+public class SocialNotFoundException extends EntityNotFoundException {
 }
