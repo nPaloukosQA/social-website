@@ -2,19 +2,19 @@ package com.qa.service;
 
 import com.qa.domain.Social;
 import com.qa.exceptions.NoteNotFoundException;
-import com.qa.repo.NotesRepository;
+import com.qa.repo.SocialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class NoteService {
+public class Socialservice {
 
-    private final NotesRepository repo;
+    private final SocialRepository repo;
 
     @Autowired
-    public NoteService(NotesRepository repo) {
+    public Socialservice(SocialRepository repo) {
         this.repo = repo;
     }
 
@@ -22,8 +22,8 @@ public class NoteService {
         return this.repo.findAll();
     }
 
-    public Social createNote(Social note){
-        return this.repo.save(note);
+    public Social createNote(Social social){
+        return this.repo.save(social);
     }
 
     public Social findNoteById(Long id){
