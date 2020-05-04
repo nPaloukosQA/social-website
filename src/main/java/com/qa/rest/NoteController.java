@@ -1,6 +1,6 @@
 package com.qa.rest;
 
-import com.qa.domain.Note;
+import com.qa.domain.Social;
 import com.qa.service.NoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,12 +19,12 @@ public class NoteController {
     }
 
     @GetMapping("/getAllNotes")
-    public List<Note> getAllNotes(){
+    public List<Social> getAllNotes(){
         return this.service.readNotes();
     }
 
     @PostMapping("/createNote")
-    public Note createNote(@RequestBody Note note){
+    public Social createNote(@RequestBody Social note){
         return this.service.createNote(note);
     }
 
@@ -34,17 +34,17 @@ public class NoteController {
     }
 
     @GetMapping("/getNoteById/{id}")
-    public Note getNoteById(@PathVariable Long id){
+    public Social getNoteById(@PathVariable Long id){
         return this.service.findNoteById(id);
     }
 
     @PutMapping("/updateNote/{id}")
-    public Note updateNote(@PathVariable Long id, @RequestBody Note note){
+    public Social updateNote(@PathVariable Long id, @RequestBody Social note){
         return this.service.updateNote(id, note);
     }
 
     @PutMapping("/updateNote2")
-    public Note updateNote2(@PathParam("id") Long id, @RequestBody Note note){
+    public Social updateNote2(@PathParam("id") Long id, @RequestBody Social note){
         return this.service.updateNote(id, note);
     }
 

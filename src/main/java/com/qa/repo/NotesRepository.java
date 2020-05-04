@@ -1,12 +1,12 @@
 package com.qa.repo;
 
-import com.qa.domain.Note;
+import com.qa.domain.Social;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface NotesRepository extends JpaRepository<Note, Long> {
+public interface NotesRepository extends JpaRepository<Social, Long> {
 
-    Note findByTitle(String title);
+    Social findByTitle(String title);
 
 }

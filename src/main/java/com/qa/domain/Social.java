@@ -7,13 +7,13 @@ import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class  Note {
+public class Social {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String title;
-    private String description;
+    private String content;
 
     public Long getId() {
         return id;
@@ -31,27 +31,27 @@ public class  Note {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getContent() {
+        return content;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Note note = (Note) o;
-        return id.equals(note.id) &&
-                title.equals(note.title) &&
-                description.equals(note.description);
+        Social social = (Social) o;
+        return id.equals(social.id) &&
+                title.equals(social.title) &&
+                content.equals(social.content);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, description);
+        return Objects.hash(id, title, content);
     }
 
 }
