@@ -2,39 +2,50 @@ package com.qa.service;
 
 
 import com.qa.domain.Post;
+import com.qa.dto.PostDTO;
 import com.qa.exceptions.PostNotFoundException;
 import com.qa.repo.PostRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class PostService {
 
     private final PostRepository repo;
 
+    private final ModelMapper mapper;
+
     @Autowired
-    public PostService(PostRepository repo) {
+    public PostService(PostRepository repo, ModelMapper mapper) {
         this.repo = repo;
+        this.mapper = mapper;
     }
 
-    public List<Post> readPosts() {
-        return this.repo.findAll();
+    private PostDTO mapToDTO(Post post) {
+        return this.mapper.map(post, PostDTO.class);
     }
 
-    public Post createPost(Post post) {
-        return this.repo.save(post);
+    public List<PostDTO> readPosts() {
+        return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
     }
 
-    public Post findPostById(Long pid) {
-        return this.repo.findById(pid).orElseThrow(PostNotFoundException::new);
+    public PostDTO createPost(Post post) {
+        return this.mapToDTO(this.repo.save(post));
     }
 
-    public Post updatePost(Long pid, Post post) {
-        Post update = findPostById(pid);
+    public PostDTO findPostById(Long pid) {
+        return this.mapToDTO(this.repo.findById(pid).orElseThrow(PostNotFoundException::new));
+    }
+
+    public PostDTO updatePost(Long pid, Post post) {
+        Post update = this.repo.findById(pid).orElseThrow(PostNotFoundException::new);
         update.setPictureLink(post.getPictureLink());
-        return this.repo.save(update);
+        Post tempPost = this.repo.save(update);
+        return this.mapToDTO(tempPost);
     }
 
     public boolean deletePost(Long pid) {
