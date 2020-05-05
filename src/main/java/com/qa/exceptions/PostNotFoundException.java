@@ -6,4 +6,4 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import javax.persistence.EntityNotFoundException;
 
 @ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "The post doesn't exist")
-public class PostNotFound extends EntityNotFoundException {}
+public class PostNotFoundException extends EntityNotFoundException {}
