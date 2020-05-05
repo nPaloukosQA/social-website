@@ -2,7 +2,6 @@ package com.qa.rest;
 
 
 import com.qa.domain.Post;
-import com.qa.domain.Social;
 import com.qa.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

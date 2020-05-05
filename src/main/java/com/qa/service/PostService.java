@@ -33,7 +33,7 @@ public class PostService {
 
     public Post updatePost(Long pid, Post post) {
         Post update = findPostById(pid);
-        update.setPicturelnk(post.getPicturelnk());
+        update.setPictureLink(post.getPictureLink());
         return this.repo.save(update);
     }
 

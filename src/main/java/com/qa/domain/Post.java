@@ -1,6 +1,5 @@
 package com.qa.domain;
 
-
 import javax.persistence.Entity;
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -13,7 +12,7 @@ public class Post {
     @GeneratedValue
 
     private Long pid;
-    private String picturelnk;
+    private String pictureLink;
 
     @OneToMany(mappedBy = "post", fetch = FetchType.LAZY)
     private List<Social> socials = new ArrayList<>();
@@ -21,8 +20,8 @@ public class Post {
     public Post() {
     }
 
-    public Post(String picturelnk) {
-        this.picturelnk = picturelnk;
+    public Post(String pictureLink) {
+        this.pictureLink = pictureLink;
     }
 
     public Long getPid() {
@@ -33,12 +32,12 @@ public class Post {
         this.pid = pid;
     }
 
-    public String getPicturelnk() {
-        return picturelnk;
+    public String getPictureLink() {
+        return pictureLink;
     }
 
-    public void setPicturelnk(String picturelnk) {
-        this.picturelnk = picturelnk;
+    public void setPictureLink(String pictureLink) {
+        this.pictureLink = pictureLink;
     }
 
     public List<Social> getSocials() {
