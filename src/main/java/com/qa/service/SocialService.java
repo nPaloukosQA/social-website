@@ -1,40 +1,52 @@
 package com.qa.service;
 
 import com.qa.domain.Social;
+import com.qa.dto.SocialDTO;
 import com.qa.exceptions.SocialNotFoundException;
 import com.qa.repo.SocialRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class SocialService {
 
     private final SocialRepository repo;
 
+    private final ModelMapper mapper;
+
     @Autowired
-    public SocialService(SocialRepository repo) {
+    public SocialService(SocialRepository repo, ModelMapper mapper) {
         this.repo = repo;
+        this.mapper = mapper;
     }
 
-    public List<Social> readSocials(){
-        return this.repo.findAll();
+    private SocialDTO mapToDTO(Social social) {
+        return this.mapper.map(social, SocialDTO.class);
     }
 
-    public Social createSocial(Social social){
-        return this.repo.save(social);
+    public List<SocialDTO> readSocials(){
+        return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
     }
 
-    public Social findSocialById(Long id){
-        return this.repo.findById(id).orElseThrow(SocialNotFoundException::new);
+    public SocialDTO createSocial(Social social){
+        Social tempSocial = this.repo.save(social);
+        return this.mapToDTO(tempSocial);
     }
 
-    public Social updateSocial(Long id, Social social){
-        Social update = findSocialById(id);
+    public SocialDTO findSocialById(Long id){
+        return this.mapToDTO(this.repo.findById(id).orElseThrow(SocialNotFoundException::new));
+    }
+
+    public SocialDTO updateSocial(Long id, Social social){
+        Social update = this.repo.findById(id).orElseThrow(SocialNotFoundException::new);
         update.setTitle(social.getTitle());
         update.setContent(social.getContent());
-        return this.repo.save(update);
+        Social tempSocial = this.repo.save(social);
+        return this.mapToDTO(tempSocial);
     }
 
     public boolean deleteSocial(Long id){
@@ -44,6 +56,4 @@ public class SocialService {
         this.repo.deleteById(id);
         return this.repo.existsById(id);
     }
-
-
 }
