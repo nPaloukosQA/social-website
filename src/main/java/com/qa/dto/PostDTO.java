@@ -8,14 +8,12 @@ public class PostDTO {
 
     private Long pid;
     private String pictureLink;
-    private List<PostDTO> posts;
 
     public PostDTO(){}
 
-    public PostDTO(String pictureLink, List<PostDTO> posts) {
-        super();
+    public PostDTO(String pictureLink) {
+
         this.pictureLink = pictureLink;
-        this.posts = posts;
     }
 
     public Long getPid() {
@@ -34,11 +32,4 @@ public class PostDTO {
         this.pictureLink = pictureLink;
     }
 
-    public List<PostDTO> getPosts() {
-        return posts;
-    }
-
-    public void setPosts(List<PostDTO> posts) {
-        this.posts = posts;
-    }
 }
