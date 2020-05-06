@@ -1,8 +1,11 @@
 package com.qa.rest;
 
 import com.qa.domain.Social;
+import com.qa.dto.SocialDTO;
 import com.qa.service.SocialService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
@@ -19,33 +22,35 @@ public class SocialController {
     }
 
     @GetMapping("/getAllSocials")
-    public List<Social> getAllSocials(){
-        return this.service.readSocials();
+    public ResponseEntity<List<SocialDTO>> getAllSocials(){
+        return ResponseEntity.ok(this.service.readSocials());
     }
 
     @PostMapping("/createSocial")
-    public Social createSocial(@RequestBody Social social){
-        return this.service.createSocial(social);
+    public ResponseEntity<SocialDTO> createSocial(@RequestBody Social social){
+        return new ResponseEntity<SocialDTO>(this.service.createSocial(social), HttpStatus.CREATED);
     }
 
     @DeleteMapping("/deleteSocial/{id}")
-    public boolean deleteSocial(@PathVariable Long id){
-        return this.service.deleteSocial(id);
+    public ResponseEntity<?> deleteSocial(@PathVariable Long id){
+        return this.service.deleteSocial(id)
+                ? ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
+                : ResponseEntity.noContent().build();
     }
 
     @GetMapping("/getSocialById/{id}")
-    public Social getSocialById(@PathVariable Long id){
-        return this.service.findSocialById(id);
+    public ResponseEntity<SocialDTO> getSocialById(@PathVariable Long id){
+        return ResponseEntity.ok(this.service.findSocialById(id));
     }
 
     @PutMapping("/updateSocial/{id}")
-    public Social updateSocial(@PathVariable Long id, @RequestBody Social social){
-        return this.service.updateSocial(id, social);
+    public ResponseEntity<SocialDTO> updateSocial(@PathVariable Long id, @RequestBody Social social) {
+        return ResponseEntity.ok(this.service.updateSocial(id, social));
     }
 
     @PutMapping("/updateSocial2")
-    public Social updateSocial2(@PathParam("id") Long id, @RequestBody Social social){
-        return this.service.updateSocial(id, social);
+    public ResponseEntity<SocialDTO> updateSocial2(@PathParam("id") Long id, @RequestBody Social social) {
+        return ResponseEntity.ok(this.service.updateSocial(id, social));
     }
 
 }

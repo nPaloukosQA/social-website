@@ -1,7 +1,8 @@
 package com.qa.domain;
 
 import javax.persistence.*;
-import java.util.Objects;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity
@@ -13,8 +14,16 @@ public class Social {
     private String title;
     private String content;
 
-    @ManyToOne(targetEntity = Post.class)
-    private Post post;
+    @OneToMany(mappedBy = "social", fetch = FetchType.LAZY)
+    private List<Post> posts = new ArrayList<>();
+
+    public Social(){
+    }
+
+    public Social(String title, String content){
+        this.title = title;
+        this.content = content;
+    }
 
     public Long getId() {
         return id;
@@ -40,19 +49,11 @@ public class Social {
         this.content = content;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Social social = (Social) o;
-        return id.equals(social.id) &&
-                title.equals(social.title) &&
-                content.equals(social.content);
+    public List<Post> getPosts() {
+        return posts;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, title, content);
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
     }
-
 }
