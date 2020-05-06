@@ -2,18 +2,25 @@ package com.qa.dto;
 
 import com.qa.domain.Post;
 
+import java.util.List;
+
 public class SocialDTO {
 
     private Long id;
     private String title;
     private String content;
+    private List<PostDTO> posts;
 
-    public SocialDTO(){}
+   public SocialDTO(){
 
-    public SocialDTO(String title, String content) {
-        this.title = title;
-        this.content = content;
-    }
+   }
+
+   public SocialDTO (String title, String content, List<PostDTO> posts) {
+       super();
+       this.title = title;
+       this.content = content;
+       this.posts = posts;
+   }
 
     public Long getId() {
         return id;
@@ -37,5 +44,13 @@ public class SocialDTO {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public List<PostDTO> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(List<PostDTO> posts) {
+        this.posts = posts;
     }
 }
