@@ -79,5 +79,16 @@ public class PostControllerIntegrationTest {
         assertEquals(content, this.objectMapper.writeValueAsString(postDTOList));
     }
 
-
+    @Test
+    public void getPostByID() throws Exception{
+        String content = this.mock.perform(
+                request(HttpMethod.GET, "/getPostById/" + this.pid)
+                        .accept(MediaType.APPLICATION_JSON)
+        )
+                .andExpect(status().isOk())
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+        assertEquals(content, this.objectMapper.writeValueAsString(postDTO));
+    }
 }
