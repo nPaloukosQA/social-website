@@ -1,6 +1,5 @@
 package com.qa.domain;
 
-import javax.persistence.Entity;
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -21,6 +20,7 @@ public class Post {
     }
 
     public Post(String pictureLink){
+        super();
         this.pictureLink = pictureLink;
     }
 
@@ -72,7 +72,6 @@ public class Post {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(pid, pictureLink);
+    public int hashCode(){return Objects.hash(pictureLink, pid);
     }
 }
