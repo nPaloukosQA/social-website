@@ -64,5 +64,13 @@ public class PostServiceUnitTest {
         verify(repository, times(1)).findAll();
     }
 
+    @Test
+    public void createPostTest(){
+        when(repository.save(testPost)).thenReturn(testPostWithID);
+        when(this.mapper.map(testPostWithID, PostDTO.class)).thenReturn(postDTO);
+        assertEquals(this.service.createPost(testPost), this.postDTO);
+        verify(repository, times(1)).save(this.testPost);
+    }
+
 
 }
