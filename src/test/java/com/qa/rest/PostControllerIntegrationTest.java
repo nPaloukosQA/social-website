@@ -107,5 +107,11 @@ public class PostControllerIntegrationTest {
         assertEquals(result, this.objectMapper.writeValueAsString(postDTO));
     }
 
+    @Test
+    public void deletePostTest() throws Exception{
+        this.mock.perform(
+                request(HttpMethod.DELETE, "/deletePost/" + this.pid)
+        ).andExpect(status().isNoContent());
+    }
 
 }
