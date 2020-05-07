@@ -72,6 +72,7 @@ public class Post {
     }
 
     @Override
-    public int hashCode(){return Objects.hash(pictureLink, pid);
+    public int hashCode(){
+        return Objects.hash(pictureLink, pid);
     }
 }

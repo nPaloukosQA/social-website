@@ -47,18 +47,23 @@ public class PostServiceIntegrationTest {
         this.testPostWithID = this.repository.save(this.testPost);
     }
 
-//    @Test
-//    public void readPostsTest(){
-//        assertThat(this.service.readPosts())
-//                .isEqualTo(
-//                        Stream.of(this.mapToDTO(testPostWithID)).collect(Collectors.toList())
-//                );
-//    }
+    @Test
+    public void readPostsTest(){
+        assertThat(this.service.readPosts())
+                .isEqualTo(
+                        Stream.of(this.mapToDTO(testPostWithID)).collect(Collectors.toList())
+                );
+    }
 
-//    @Test
-//    public void createPostTest(){
-//        assertEquals(this.mapToDTO(this.testPostWithID), this.service.createPost(testPost));
-//    }
+    @Test
+    public void createPostTest(){
+        assertEquals(this.mapToDTO(this.testPostWithID), this.service.createPost(testPost));
+    }
+
+    @Test
+    public void findPostByIdTest(){
+        assertThat(this.service.findPostById(this.testPostWithID.getPid())).isEqualTo(this.mapToDTO(this.testPostWithID));
+    }
 
 
 

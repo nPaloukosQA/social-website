@@ -34,11 +34,13 @@ public class PostService {
     }
 
     public PostDTO createPost(Post post) {
-        return this.mapToDTO(this.repo.save(post));
+        Post tempPost = this.repo.save(post);
+        return this.mapToDTO(tempPost);
     }
 
     public PostDTO findPostById(Long pid) {
-        return this.mapToDTO(this.repo.findById(pid).orElseThrow(PostNotFoundException::new));
+        return this.mapToDTO(this.repo.findById(pid)
+                .orElseThrow(PostNotFoundException::new));
     }
 
     public PostDTO updatePost(Long pid, Post post) {

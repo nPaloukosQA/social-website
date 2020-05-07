@@ -1,8 +1,9 @@
 package com.qa.dto;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.List;
+import com.qa.domain.Post;
+
+
+import java.util.Objects;
 
 public class PostDTO {
 
@@ -12,7 +13,6 @@ public class PostDTO {
     public PostDTO(){}
 
     public PostDTO(String pictureLink) {
-
         this.pictureLink = pictureLink;
     }
 
@@ -30,6 +30,29 @@ public class PostDTO {
 
     public void setPictureLink(String pictureLink) {
         this.pictureLink = pictureLink;
+    }
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        PostDTO other = (PostDTO) obj;
+        if (pictureLink == null) {
+            if (other.pictureLink != null)
+                return false;
+        } else if (!pictureLink.equals(other.pictureLink))
+            return false;
+        if (pid == null) {
+            if (other.pid != null)
+                return false;
+        } else if (!pid.equals(other.pid))
+            return false;
+        return true;
     }
 
 }
