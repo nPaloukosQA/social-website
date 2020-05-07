@@ -91,4 +91,21 @@ public class PostControllerIntegrationTest {
                 .getContentAsString();
         assertEquals(content, this.objectMapper.writeValueAsString(postDTO));
     }
+
+    @Test
+    public void createPostTest() throws Exception{
+        String result = this.mock.perform(
+                request(HttpMethod.POST, "/createPost")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(this.objectMapper.writeValueAsString(testPost))
+                .accept(MediaType.APPLICATION_JSON)
+        )
+                .andExpect(status().isCreated())
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+        assertEquals(result, this.objectMapper.writeValueAsString(postDTO));
+    }
+
+
 }
