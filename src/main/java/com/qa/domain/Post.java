@@ -2,7 +2,6 @@ package com.qa.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.*;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -42,12 +41,25 @@ public class Post {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Post post = (Post) o;
-        return pid.equals(post.pid) &&
-                pictureLink.equals(post.pictureLink);
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Post other = (Post) obj;
+        if (pictureLink == null) {
+            if (other.pictureLink != null)
+                return false;
+        } else if (!pictureLink.equals(other.pictureLink))
+            return false;
+        if (pid == null) {
+            if (other.pid != null)
+                return false;
+        } else if (!pid.equals(other.pid))
+            return false;
+        return true;
     }
 
     @Override
