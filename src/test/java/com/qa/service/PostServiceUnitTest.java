@@ -72,5 +72,28 @@ public class PostServiceUnitTest {
         verify(repository, times(1)).save(this.testPost);
     }
 
+    @Test
+    public void findPostByIdTest(){
+        when(this.repository.findById(pid)).thenReturn(java.util.Optional.ofNullable(testPostWithID));
+        when(this.mapper.map(testPostWithID, PostDTO.class)).thenReturn(postDTO);
+        assertEquals(this.service.findPostById(this.pid), postDTO);
+        verify(repository, times(1)).findById(pid);
+    }
+
+    @Test
+    public void deletePostByExistingId(){
+        when(this.repository.existsById(pid)).thenReturn(true, false);
+        assertFalse(service.deletePost(pid));
+        verify(repository, times(1)).deleteById(pid);
+        verify(repository, times(2)).existsById(pid);
+    }
+
+    @Test(expected = PostNotFoundException.class)
+    public void deletePostByNonExistingId(){
+        when(this.repository.existsById(pid)).thenReturn(false);
+        service.deletePost(pid);
+        verify(repository, times(1)).existsById(pid);
+    }
+
 
 }
