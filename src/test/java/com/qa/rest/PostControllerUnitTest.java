@@ -71,5 +71,26 @@ public class PostControllerUnitTest {
         verify(this.service, times(1)).createPost(testPost);
     }
 
+    @Test
+    public void deletePostTestFalse(){
+        this.postController.deletePost(pid);
+        verify(service, times(1)).deletePost(pid);
+    }
+
+    @Test
+    public void deletePostByIdTrue(){
+        when(service.deletePost(3L)).thenReturn(true);
+        this.postController.deletePost(3L);
+        verify(service, times(1)).deletePost(3L);
+    }
+
+    @Test
+    public void getPostByIdTest(){
+        when(this.service.findPostById(pid)).thenReturn(this.postDTO);
+        assertEquals(this.postController.getPostById(pid), new ResponseEntity<PostDTO>(this.postDTO, HttpStatus.OK));
+        verify(service, times(1)).findPostById(pid);
+    }
+
+
 
 }
