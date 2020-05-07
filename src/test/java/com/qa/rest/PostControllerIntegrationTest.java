@@ -1,18 +1,31 @@
 package com.qa.rest;
 
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qa.domain.Post;
 import com.qa.dto.PostDTO;
 import com.qa.repo.PostRepository;
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.request;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 
 @RunWith(SpringRunner.class)
 @AutoConfigureMockMvc
@@ -50,4 +63,21 @@ public class PostControllerIntegrationTest {
         this.pid = testPostWithID.getPid();
         this.postDTO = this.mapToDTO(testPostWithID);
     }
+
+    @Test
+    public void getAllPostsTest() throws Exception{
+        List<PostDTO> postDTOList = new ArrayList<>();
+        postDTOList.add(postDTO);
+        String content = this.mock.perform(
+                request(HttpMethod.GET, "/getAllPosts")
+                .accept(MediaType.APPLICATION_JSON)
+        )
+                .andExpect(status().isOk())
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+        assertEquals(content, this.objectMapper.writeValueAsString(postDTOList));
+    }
+
+
 }
