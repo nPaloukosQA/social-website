@@ -8,13 +8,22 @@ import java.util.Objects;
 public class Post {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
 
     private Long pid;
     private String pictureLink;
 
     @ManyToOne(targetEntity = Social.class)
     private Social social;
+
+    public Post(){
+
+    }
+
+    public Post(String pictureLink){
+        this.pictureLink = pictureLink;
+    }
+
 
     public Long getPid() {
         return pid;
