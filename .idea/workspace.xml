@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f57e43b5-c70b-4f49-a214-66e7ebab6377" name="Default Changelist" comment="" />
+    <list id="5a25c20f-4351-4ede-b543-c32542ebe358" name="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;" comment="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;&#10;&#10;This reverts commit 43be67ff" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="223" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="b553b832bdd090a10d20a659736df1e964c7b480" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1bQpLvScHIiNmjtoR5Vy7eFINa8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../project" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.All in SpringNotes (2)">
+    <configuration name="All in SpringNotes (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringNotes" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in SpringNotes (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringNotes" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in SpringNotes (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringNotes" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in SpringNotes (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringNotes" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceIntegrationTest.readPostsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringNotes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.service" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.service.PostServiceIntegrationTest" />
+      <option name="METHOD_NAME" value="readPostsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in SpringNotes (2)" />
+        <item itemvalue="JUnit.PostServiceIntegrationTest.readPostsTest" />
+        <item itemvalue="JUnit.All in SpringNotes (4)" />
+        <item itemvalue="JUnit.All in SpringNotes (3)" />
+        <item itemvalue="JUnit.All in SpringNotes (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f57e43b5-c70b-4f49-a214-66e7ebab6377" name="Default Changelist" comment="" />
+      <created>1588574119125</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588574119125</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added domain class">
+      <created>1588592970141</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588592970141</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Debugged custom exception and domain class">
+      <created>1588599295178</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588599295178</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed issues with service and controller functions.">
+      <created>1588600709600</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588600709600</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added domain post class&#10;fixed bugs on pom.xml">
+      <created>1588671717813</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588671717815</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added PostNotFound exception">
+      <created>1588672416309</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588672416309</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added PostService class">
+      <created>1588673716309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588673716310</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added PostController class">
+      <created>1588674452202</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588674452203</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added PostRepository class">
+      <created>1588674602365</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588674602365</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated PostNotFoundException">
+      <created>1588674633245</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588674633245</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated pom.xml&#10;added new package with AppConfiguration class">
+      <created>1588689514224</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588689514227</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added dto package&#10;created SocialDTO class">
+      <created>1588689933114</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588689933115</updated>
+    </task>
+    <task id="LOCAL-00012" summary="created PostDTO class">
+      <created>1588690245183</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588690245184</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added imports in PostDTO">
+      <created>1588690377873</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588690377873</updated>
+    </task>
+    <task id="LOCAL-00014" summary="updated SocialService class">
+      <created>1588691790635</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588691790638</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updated PostService class">
+      <created>1588693235766</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1588693235768</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Reworked social class">
+      <created>1588758834581</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588758834583</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Reworked post class">
+      <created>1588759259758</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1588759259758</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Reworked SocialDTO class">
+      <created>1588760499231</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1588760499232</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Reworked PostDTO class">
+      <created>1588760615471</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1588760615471</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Reworked Post class">
+      <created>1588835441974</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1588835441975</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Reworked Post class">
+      <created>1588835669973</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1588835669973</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added AppTest">
+      <created>1588836396061</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1588836396062</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Created PostControllerUnitTest&#10;added get all posts test&#10;added create post test">
+      <created>1588838447455</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1588838447455</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added delete post test&#10;added find post by id test">
+      <created>1588842184325</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1588842184325</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Created PostControllerIntegrationTest&#10;added the setup parameters">
+      <created>1588843351802</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1588843351803</updated>
+    </task>
+    <task id="LOCAL-00026" summary="created getAllPosts test">
+      <created>1588844692254</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588844692255</updated>
+    </task>
+    <task id="LOCAL-00027" summary="created getPostByID test">
+      <created>1588845015531</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1588845015532</updated>
+    </task>
+    <task id="LOCAL-00028" summary="created createPost test">
+      <created>1588845246072</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1588845246072</updated>
+    </task>
+    <task id="LOCAL-00029" summary="created deletePost test">
+      <created>1588845645683</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1588845645683</updated>
+    </task>
+    <task id="LOCAL-00030" summary="created PostServiceIntegrationTest class&#10;added the setup methods">
+      <created>1588846039528</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1588846039528</updated>
+    </task>
+    <task id="LOCAL-00031" summary="created PostServiceUnitTest&#10;added the setup functions">
+      <created>1588859146516</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1588859146517</updated>
+    </task>
+    <task id="LOCAL-00032" summary="added get all post test">
+      <created>1588859851426</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1588859851427</updated>
+    </task>
+    <task id="LOCAL-00033" summary="added create post test">
+      <created>1588861176248</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1588861176249</updated>
+    </task>
+    <task id="LOCAL-00034" summary="added delete post test">
+      <created>1588862558333</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1588862558335</updated>
+    </task>
+    <task id="LOCAL-00035" summary="debugged PostDTO&#10;added tests for PostServiceIntegrationTest">
+      <created>1588865233703</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1588865233704</updated>
+    </task>
+    <task id="LOCAL-00036" summary="added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins">
+      <created>1589133310397</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1589133310397</updated>
+    </task>
+    <task id="LOCAL-00037" summary="added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins">
+      <created>1589181353366</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1589181353366</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added imports in PostDTO" />
+    <MESSAGE value="updated SocialService class" />
+    <MESSAGE value="updated PostService class" />
+    <MESSAGE value="updated PostController and SocialController" />
+    <MESSAGE value="Reworked social class" />
+    <MESSAGE value="Reworked post class" />
+    <MESSAGE value="Reworked SocialDTO class" />
+    <MESSAGE value="Reworked PostDTO class" />
+    <MESSAGE value="Reworked Post class" />
+    <MESSAGE value="Added AppTest" />
+    <MESSAGE value="Created PostControllerUnitTest&#10;added get all posts test&#10;added create post test" />
+    <MESSAGE value="added delete post test&#10;added find post by id test" />
+    <MESSAGE value="Created PostControllerIntegrationTest&#10;added the setup parameters" />
+    <MESSAGE value="created getAllPosts test" />
+    <MESSAGE value="created getPostByID test" />
+    <MESSAGE value="created createPost test" />
+    <MESSAGE value="created deletePost test" />
+    <MESSAGE value="created PostServiceIntegrationTest class&#10;added the setup methods" />
+    <MESSAGE value="created PostServiceUnitTest&#10;added the setup functions" />
+    <MESSAGE value="added get all post test" />
+    <MESSAGE value="added create post test" />
+    <MESSAGE value="added delete post test" />
+    <MESSAGE value="debugged PostDTO&#10;added tests for PostServiceIntegrationTest" />
+    <MESSAGE value="added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins" />
+    <MESSAGE value="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;&#10;&#10;This reverts commit 43be67ff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;&#10;&#10;This reverts commit 43be67ff" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1589195921515">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1589195921515" />
+    <state x="1052" y="92" width="776" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588857673128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1052" y="92" width="776" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588857673128" />
+    <state x="1245" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1588858153250">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588858153250" />
+    <state x="745" y="130" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1589181949666">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="745" y="130" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589181949666" />
+    <state x="649" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588675149102">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="649" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588675149102" />
+    <state x="242" y="167" key="CommitChangelistDialog2" timestamp="1589182272430">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="242" y="167" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589182272430" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589184617595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589184617595" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1588666860360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588666860360" />
+    <state x="828" y="414" key="Github.ShareDialog" timestamp="1588590453246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="414" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588590453246" />
+    <state x="698" y="143" key="Github.UntrackedFilesDialog" timestamp="1588590475413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="698" y="143" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588590475413" />
+    <state width="938" height="275" key="GridCell.Tab.0.bottom" timestamp="1589222965982">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589222965982" />
+    <state width="938" height="275" key="GridCell.Tab.0.center" timestamp="1589222965982">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589222965982" />
+    <state width="938" height="275" key="GridCell.Tab.0.left" timestamp="1589222965981">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589222965981" />
+    <state width="938" height="275" key="GridCell.Tab.0.right" timestamp="1589222965982">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589222965982" />
+    <state width="914" height="305" key="GridCell.Tab.1.bottom" timestamp="1588867423825">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588867423825" />
+    <state width="914" height="305" key="GridCell.Tab.1.center" timestamp="1588867423824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="305" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588867423824" />
+    <state width="914" height="305" key="GridCell.Tab.1.left" timestamp="1588867423824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="305" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588867423824" />
+    <state width="914" height="305" key="GridCell.Tab.1.right" timestamp="1588867423824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="305" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588867423824" />
+    <state x="872" y="178" key="Maven.ArtifactSearchDialog" timestamp="1588689291214">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="872" y="178" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588689291214" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1589181977398">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589181977398" />
+    <state x="664" y="227" key="MultipleFileMergeDialog" timestamp="1589184206561">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="227" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589184206561" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1588866324588">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588866324588" />
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1589184617595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589184617595" />
+    <state x="1009" y="238" key="Vcs.Push.Dialog.v2" timestamp="1589224135499">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1009" y="238" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589224135499" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1589184269089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589184269089" />
+    <state x="636" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589223770947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589223770947" />
+    <state x="767" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589196346840">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="767" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589196346840" />
+    <state x="722" y="151" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589182715640">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="151" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589182715640" />
+    <state x="718" y="299" key="git4idea.merge.GitMergeDialog" timestamp="1589224124059">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="299" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589224124059" />
+    <state x="668" y="293" key="git4idea.merge.GitPullDialog" timestamp="1589196067600">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="293" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589196067600" />
+    <state x="727" y="415" key="git4idea.ui.GitStashDialog" timestamp="1589223956138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="415" key="git4idea.ui.GitStashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589223956138" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1588842825877">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588842825877" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588866319310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588866319310" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SpringNotes$AppTest_shouldAnswerWithTrue.ic" NAME="AppTest.shouldAnswerWithTrue Coverage Results" MODIFIED="1588836204528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_deletePostByExistingId.ic" NAME="PostServiceUnitTest.deletePostByExistingId Coverage Results" MODIFIED="1588862226847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_getAllPostsTest.ic" NAME="PostServiceUnitTest.getAllPostsTest Coverage Results" MODIFIED="1588859430129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_deletePostByNonExistingId.ic" NAME="PostServiceUnitTest.deletePostByNonExistingId Coverage Results" MODIFIED="1588862526092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_createNoteTest.ic" NAME="PostServiceUnitTest.createNoteTest Coverage Results" MODIFIED="1588861073748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_getPostByID.ic" NAME="PostControllerIntegrationTest.getPostByID Coverage Results" MODIFIED="1588844972125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.rest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostControllerUnitTest_getPostByIdTest.ic" NAME="PostControllerUnitTest.getPostByIdTest Coverage Results" MODIFIED="1588842088863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.rest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceIntegrationTest_findPostByIdTest.ic" NAME="PostServiceIntegrationTest.findPostByIdTest Coverage Results" MODIFIED="1588865183613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceIntegrationTest_createPostTest.ic" NAME="PostServiceIntegrationTest.createPostTest Coverage Results" MODIFIED="1588865165095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes.ic" NAME="All in SpringNotes Coverage Results" MODIFIED="1589184275771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes__1_.ic" NAME="All in SpringNotes (1) Coverage Results" MODIFIED="1589184409638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes__3_.ic" NAME="All in SpringNotes (3) Coverage Results" MODIFIED="1588841740097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_findPostByIdTest.ic" NAME="PostServiceUnitTest.findPostByIdTest Coverage Results" MODIFIED="1588861686993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_getAllPostsTest.ic" NAME="PostControllerIntegrationTest.getAllPostsTest Coverage Results" MODIFIED="1588844645361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.rest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_deletePostTest.ic" NAME="PostControllerIntegrationTest.deletePostTest Coverage Results" MODIFIED="1588845346205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.rest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes__2_.ic" NAME="All in SpringNotes (2) Coverage Results" MODIFIED="1588858342545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_createPostTest.ic" NAME="PostControllerIntegrationTest.createPostTest Coverage Results" MODIFIED="1588845203528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.rest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceIntegrationTest_readPostsTest.ic" NAME="PostServiceIntegrationTest.readPostsTest Coverage Results" MODIFIED="1588865123267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+  </component>
+</project>
