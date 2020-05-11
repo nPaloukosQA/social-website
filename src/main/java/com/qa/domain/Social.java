@@ -1,9 +1,10 @@
 package com.qa.domain;
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.util.Objects;
 
 @Entity
 public class Social {
@@ -13,17 +14,6 @@ public class Social {
     private Long id;
     private String title;
     private String content;
-
-    @OneToMany(mappedBy = "social", fetch = FetchType.LAZY)
-    private List<Post> posts = new ArrayList<>();
-
-    public Social(){
-    }
-
-    public Social(String title, String content){
-        this.title = title;
-        this.content = content;
-    }
 
     public Long getId() {
         return id;
@@ -49,11 +39,19 @@ public class Social {
         this.content = content;
     }
 
-    public List<Post> getPosts() {
-        return posts;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Social social = (Social) o;
+        return id.equals(social.id) &&
+                title.equals(social.title) &&
+                content.equals(social.content);
     }
 
-    public void setPosts(List<Post> posts) {
-        this.posts = posts;
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, content);
     }
+
 }
