@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f57e43b5-c70b-4f49-a214-66e7ebab6377" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <list id="5a25c20f-4351-4ede-b543-c32542ebe358" name="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;" comment="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;&#10;&#10;This reverts commit 43be67ff" />
     <option name="SHOW_DIALOG" value="false" />
@@ -388,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589181353366</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="made a change in pom.xml">
+      <created>1589291396753</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1589291396753</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,7 +409,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added imports in PostDTO" />
     <MESSAGE value="updated SocialService class" />
     <MESSAGE value="updated PostService class" />
     <MESSAGE value="updated PostController and SocialController" />
@@ -430,7 +433,8 @@
     <MESSAGE value="debugged PostDTO&#10;added tests for PostServiceIntegrationTest" />
     <MESSAGE value="added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins" />
     <MESSAGE value="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;&#10;&#10;This reverts commit 43be67ff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;&#10;&#10;This reverts commit 43be67ff" />
+    <MESSAGE value="made a change in pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="made a change in pom.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1589195921515">
@@ -457,10 +461,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="649" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588675149102" />
-    <state x="242" y="167" key="CommitChangelistDialog2" timestamp="1589182272430">
+    <state x="242" y="167" key="CommitChangelistDialog2" timestamp="1589291395440">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="242" y="167" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589182272430" />
+    <state x="242" y="167" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589291395440" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589184617595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -529,10 +533,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589184617595" />
-    <state x="1009" y="238" key="Vcs.Push.Dialog.v2" timestamp="1589224135499">
+    <state x="1009" y="238" key="Vcs.Push.Dialog.v2" timestamp="1589291417808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1009" y="238" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589224135499" />
+    <state x="1009" y="238" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589291417808" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1589184269089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
