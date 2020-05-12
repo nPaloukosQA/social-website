@@ -7,14 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringNotes" />
+        <module name="NikolaosPaloukos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="NikolaosPaloukos" target="11" />
       <module name="SpringNotes" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="NikolaosPaloukos" options="-parameters" />
       <module name="SpringNotes" options="-parameters" />
     </option>
   </component>
