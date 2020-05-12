@@ -400,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589292018225</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="another change for pom.xml">
+      <created>1589293142092</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1589293142093</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,7 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated SocialService class" />
     <MESSAGE value="updated PostService class" />
     <MESSAGE value="updated PostController and SocialController" />
     <MESSAGE value="Reworked social class" />
@@ -442,7 +448,8 @@
     <MESSAGE value="added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins" />
     <MESSAGE value="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;&#10;&#10;This reverts commit 43be67ff" />
     <MESSAGE value="made a change in pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a change in pom.xml" />
+    <MESSAGE value="another change for pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="another change for pom.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1589195921515">
@@ -469,10 +476,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="649" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588675149102" />
-    <state x="242" y="167" key="CommitChangelistDialog2" timestamp="1589292017393">
+    <state x="242" y="167" key="CommitChangelistDialog2" timestamp="1589293141146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="242" y="167" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589292017393" />
+    <state x="242" y="167" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589293141146" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589292033413">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -541,10 +548,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589184617595" />
-    <state x="1009" y="238" key="Vcs.Push.Dialog.v2" timestamp="1589292036179">
+    <state x="1009" y="238" key="Vcs.Push.Dialog.v2" timestamp="1589293145996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1009" y="238" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589292036179" />
+    <state x="1009" y="238" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589293145996" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1589184269089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

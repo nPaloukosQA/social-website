@@ -15,7 +15,7 @@
   <artifactId>NikolaosPaloukos-socialwebsite</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Nikolaos Paloukos</name>
+  <name>NikolaosPaloukos</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
