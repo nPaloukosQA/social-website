@@ -12,10 +12,10 @@
   </parent>
 
   <groupId>com.qa</groupId>
-  <artifactId>NikolaosPaloukos-socialwebsite</artifactId>
+  <artifactId>NikolaosPaloukos</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>NikolaosPaloukos</name>
+  <name>Nikolaos Paloukos</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
