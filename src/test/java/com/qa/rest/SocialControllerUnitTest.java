@@ -2,6 +2,7 @@ package com.qa.rest;
 
 import com.qa.domain.Social;
 import com.qa.dto.SocialDTO;
+import com.qa.exceptions.SocialNotFoundException;
 import com.qa.repo.SocialRepository;
 import com.qa.service.SocialService;
 import org.junit.Before;
@@ -63,6 +64,35 @@ public class SocialControllerUnitTest {
         verify(repository, times(1)).findAll();
     }
 
+    @Test
+    public void createSocialTest() {
+        when(repository.save(testSocial)).thenReturn(testSocialWithID);
+        when(this.mapper.map(testSocialWithID, SocialDTO.class)).thenReturn(socialDTO);
+        assertEquals(this.service.createSocial(testSocial), this.socialDTO);
+        verify(repository, times(1)).save(this.testSocial);
+    }
 
+    @Test
+    public void findSocialByIDTest() {
+        when(this.repository.findById(id)).thenReturn(java.util.Optional.ofNullable(testSocialWithID));
+        when(this.mapper.map(testSocialWithID, SocialDTO.class)).thenReturn(socialDTO);
+        assertEquals(this.service.findSocialById(this.id), socialDTO);
+        verify(repository, times(1)).findById(id);
+    }
 
+    @Test
+    public void deleteSocialByExistingIDTest() {
+        when(this.repository.existsById(id)).thenReturn(true, false);
+        assertFalse(service.deleteSocial(id));
+        verify(repository, times(1)).deleteById(id);
+        verify(repository, times(2)).existsById(id);
+    }
+
+    @Test(expected = SocialNotFoundException.class)
+    public void deleteSocialByNonExistingIDTest() {
+        when(this.repository.existsById(id)).thenReturn(false);
+        service.deleteSocial(id);
+        verify(repository, times(1)).existsById(id);
+    }
 }
+
