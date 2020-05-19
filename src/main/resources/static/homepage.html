@@ -5,16 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social</title>
 
-<!--    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+    <link href="./layout.css" rel="stylesheet"/>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-    <script src="../../js/script.js" defer></script>    
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <a href="/static/html/greetingPage.html">My link</a>
     <section id="control-center">
         <button id="get-btn">GET Data</button>
         <button id="post-btn">POST Data</button>
+        <button id="delete-btn">DELETE Data</button>
+        <button id="update-btn">UPDATE Data</button>
+
+        <input id="textdu" type="text" value="delete-update"></section>
+
+
+        <script type="text/javascript">
+        function func(){
+        var title= document.getElementById('title').value;
+        document.getElementById('show').innerHTML=title;
+        var content= document.getElementById('content').value;
+        document.getElementById('show2').innerHTML=content;
+        };
+        </script>
+
+        <div class="check">
+            <input id="title" type="text" value="Add a title">
+            <input id="content" type="text" value="Type your content" width="200px" height="400px">
+            <input type="submit" value="share" onclick="func()">
+        </div>
+
+        <div class="duo">
+            <h1 id="show"></h1>
+            <p id="show2"></p>
+        </div>
+
     </section>
+
 
 </body>
 </html>

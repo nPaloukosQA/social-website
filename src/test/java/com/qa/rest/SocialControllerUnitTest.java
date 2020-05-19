@@ -1,98 +1,93 @@
 package com.qa.rest;
 
 import com.qa.domain.Social;
+import com.qa.dto.PostDTO;
 import com.qa.dto.SocialDTO;
-import com.qa.exceptions.SocialNotFoundException;
-import com.qa.repo.SocialRepository;
 import com.qa.service.SocialService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.modelmapper.ModelMapper;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.mockito.Mockito.*;
-import static org.junit.Assert.assertEquals;
 
-
-@RunWith(SpringRunner.class)
+@RunWith(MockitoJUnitRunner.class)
 public class SocialControllerUnitTest {
 
     @InjectMocks
+    private SocialController socialController;
+
+    @Mock
     private SocialService service;
 
-    @Mock
-    private SocialRepository repository;
-
-    @Mock
-    private ModelMapper mapper;
-
-    private List<Social> socialList;
+    private List<Social> socials;
 
     private Social testSocial;
 
-    private Long id = 1L;
-
     private Social testSocialWithID;
+
+    private long id =1L;
 
     private SocialDTO socialDTO;
 
-    private SocialDTO maptoDTO(Social social){return this.mapper.map(social, SocialDTO.class);}
+    private final ModelMapper mapper = new ModelMapper();
+
+    private SocialDTO mapToDTO(Social social){ return this.mapper.map(social, SocialDTO.class);}
 
     @Before
     public void setUp(){
-        this.socialList = new ArrayList<>();
-        this.testSocial = new Social("Good Title", "amazing content");
-        this.socialList.add(testSocial);
+        this.socials = new ArrayList<>();
+        this.testSocial = new Social("WOW, what a title", "just a common content :<(");
+        this.socials.add(testSocial);
         this.testSocialWithID = new Social(testSocial.getTitle(), testSocial.getContent());
-        this.testSocialWithID.setId(id);
-        this.socialDTO = this.maptoDTO(testSocialWithID);
+        this.testSocialWithID.setId(this.id);
+        this.socialDTO = this.mapToDTO(testSocialWithID);
     }
 
     @Test
     public void getAllSocialsTest(){
-        when(repository.findAll()).thenReturn(this.socialList);
-        when(this.mapper.map(testSocialWithID, SocialDTO.class)).thenReturn(socialDTO);
-        assertFalse("Service returned no Stories", this.service.readSocials().isEmpty());
-        verify(repository, times(1)).findAll();
+        when(service.readSocials()).thenReturn(this.socials.stream().map(this::mapToDTO).collect(Collectors.toList()));
+        assertFalse("No socials found", this.socialController.getAllSocials().getBody().isEmpty());
+        verify(service, times(1)).readSocials();
     }
 
     @Test
-    public void createSocialTest() {
-        when(repository.save(testSocial)).thenReturn(testSocialWithID);
-        when(this.mapper.map(testSocialWithID, SocialDTO.class)).thenReturn(socialDTO);
-        assertEquals(this.service.createSocial(testSocial), this.socialDTO);
-        verify(repository, times(1)).save(this.testSocial);
+    public void createSocialTest(){
+        when(this.service.createSocial(testSocial)).thenReturn(this.socialDTO);
+        assertEquals(this.socialController.createSocial(testSocial), new ResponseEntity<SocialDTO>(this.socialDTO, HttpStatus.CREATED));
+        verify(this.service, times(1)).createSocial(testSocial);
     }
 
     @Test
-    public void findSocialByIDTest() {
-        when(this.repository.findById(id)).thenReturn(java.util.Optional.ofNullable(testSocialWithID));
-        when(this.mapper.map(testSocialWithID, SocialDTO.class)).thenReturn(socialDTO);
-        assertEquals(this.service.findSocialById(this.id), socialDTO);
-        verify(repository, times(1)).findById(id);
+    public void deleteSocialTestFalse(){
+        this.socialController.deleteSocial(id);
+        verify(service, times(1)).deleteSocial(id);
     }
 
     @Test
-    public void deleteSocialByExistingIDTest() {
-        when(this.repository.existsById(id)).thenReturn(true, false);
-        assertFalse(service.deleteSocial(id));
-        verify(repository, times(1)).deleteById(id);
-        verify(repository, times(2)).existsById(id);
+    public void deleteSocialByIdTrue(){
+        when(service.deleteSocial(3L)).thenReturn(true);
+        this.socialController.deleteSocial(3L);
+        verify(service, times(1)).deleteSocial(3L);
     }
 
-    @Test(expected = SocialNotFoundException.class)
-    public void deleteSocialByNonExistingIDTest() {
-        when(this.repository.existsById(id)).thenReturn(false);
-        service.deleteSocial(id);
-        verify(repository, times(1)).existsById(id);
+    @Test
+    public void getSocialByIdTest(){
+        when(this.service.findSocialById(id)).thenReturn(this.socialDTO);
+        assertEquals(this.socialController.getSocialById(id), new ResponseEntity<SocialDTO>(this.socialDTO, HttpStatus.OK));
+        verify(service, times(1)).findSocialById(id);
     }
+
+
 }
-
