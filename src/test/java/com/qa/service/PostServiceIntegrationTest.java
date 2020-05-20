@@ -1,6 +1,5 @@
 package com.qa.service;
 
-
 import com.qa.domain.Post;
 import com.qa.dto.PostDTO;
 import com.qa.repo.PostRepository;

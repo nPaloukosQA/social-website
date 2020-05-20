@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f57e43b5-c70b-4f49-a214-66e7ebab6377" name="Default Changelist" comment="">
+    <list default="true" id="f57e43b5-c70b-4f49-a214-66e7ebab6377" name="Default Changelist" comment="code broke">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/domain/PostUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/dto/PostDTOUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/service/SocialServiceIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/service/SocialServiceUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/service/PostServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/service/PostServiceIntegrationTest.java" afterDir="false" />
     </list>
     <list id="5a25c20f-4351-4ede-b543-c32542ebe358" name="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;" comment="Revert &quot;added dependencies and plugins for fat jar in order to send on sonarqube and nexus through jenkins&quot;&#10;&#10;This reverts commit 43be67ff" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,9 +17,6 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="223" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,61 +39,46 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1bQpLvScHIiNmjtoR5Vy7eFINa8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.qa.service" />
+      <recent name="com.qa.rest" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nick_D_Pie\Desktop\QA Projects\blog project\src\main\resources\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nick_D_Pie\Desktop\QA Projects\blog project\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qa.App" />
-      <module name="NikolaosPaloukos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in NikolaosPaloukos (1)">
     <configuration name="All in NikolaosPaloukos (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NikolaosPaloukos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in NikolaosPaloukos (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NikolaosPaloukos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in NikolaosPaloukos (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NikolaosPaloukos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in NikolaosPaloukos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NikolaosPaloukos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -108,13 +94,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostDTOUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NikolaosPaloukos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.dto" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.dto.PostDTOUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostDTOUnitTest.hashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NikolaosPaloukos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.dto" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.dto.PostDTOUnitTest" />
+      <option name="METHOD_NAME" value="hashCodeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostDTOUnitTest.postPIDNullButOtherRarityNotNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NikolaosPaloukos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.dto" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.dto.PostDTOUnitTest" />
+      <option name="METHOD_NAME" value="postPIDNullButOtherRarityNotNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostUnitTest.constructorWithoutId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NikolaosPaloukos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.domain.PostUnitTest" />
+      <option name="METHOD_NAME" value="constructorWithoutId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.All in NikolaosPaloukos (1)" />
-        <item itemvalue="JUnit.All in NikolaosPaloukos" />
-        <item itemvalue="JUnit.All in NikolaosPaloukos (4)" />
-        <item itemvalue="JUnit.All in NikolaosPaloukos (3)" />
+        <item itemvalue="JUnit.PostDTOUnitTest" />
+        <item itemvalue="JUnit.PostDTOUnitTest.hashCodeTest" />
+        <item itemvalue="JUnit.PostUnitTest.constructorWithoutId" />
+        <item itemvalue="JUnit.PostDTOUnitTest.postPIDNullButOtherRarityNotNull" />
       </list>
     </recent_temporary>
   </component>
@@ -128,6 +177,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588574119125</updated>
+      <workItem from="1589879331019" duration="29379000" />
     </task>
     <task id="LOCAL-00001" summary="added domain class">
       <created>1588592970141</created>
@@ -437,26 +487,47 @@
       <option name="project" value="LOCAL" />
       <updated>1589552663554</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added SocialControllerUnitTest&#10;&#10;completed getAllSocialsTest">
+      <created>1589907859004</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1589907859004</updated>
+    </task>
+    <task id="LOCAL-00046" summary="finished SocialControllerUnitTest">
+      <created>1589915151719</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1589915151720</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fixed bugs in tests">
+      <created>1589919196968</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1589919196968</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reworked social class" />
-    <MESSAGE value="Reworked post class" />
-    <MESSAGE value="Reworked SocialDTO class" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Reworked PostDTO class" />
     <MESSAGE value="Reworked Post class" />
     <MESSAGE value="Added AppTest" />
@@ -479,7 +550,10 @@
     <MESSAGE value="another change for pom.xml" />
     <MESSAGE value="made changes to connect in gcp sql" />
     <MESSAGE value="added js files and api calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="added js files and api calls" />
+    <MESSAGE value="added SocialControllerUnitTest&#10;&#10;completed getAllSocialsTest" />
+    <MESSAGE value="finished SocialControllerUnitTest" />
+    <MESSAGE value="fixed bugs in tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs in tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1589195921515">
@@ -490,10 +564,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589226402008" />
-    <state x="1052" y="92" width="776" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588857673128">
+    <state x="1052" y="92" width="776" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1589907159196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1052" y="92" width="776" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588857673128" />
+    <state x="1052" y="92" width="776" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589907159196" />
     <state x="1245" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1588858153250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -502,18 +576,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="745" y="130" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589181949666" />
+    <state x="743" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589916333540">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1589916333540" />
     <state x="649" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588675149102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="649" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588675149102" />
-    <state x="242" y="167" key="CommitChangelistDialog2" timestamp="1589552662093">
+    <state x="896" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589882368254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="242" y="167" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589552662093" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589292033413">
+    <state x="896" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589882368254" />
+    <state x="242" y="167" key="CommitChangelistDialog2" timestamp="1589919195301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589292033413" />
+    <state x="242" y="167" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589919195301" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589879894095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589879894095" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1589458059228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -526,38 +608,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="698" y="143" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588590475413" />
-    <state width="1520" height="173" key="GridCell.Tab.0.bottom" timestamp="1589805075057">
+    <state width="916" height="212" key="GridCell.Tab.0.bottom" timestamp="1589963542790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1520" height="173" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589805075057" />
-    <state width="1520" height="173" key="GridCell.Tab.0.center" timestamp="1589805075057">
+    <state width="916" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589963542790" />
+    <state width="916" height="212" key="GridCell.Tab.0.center" timestamp="1589963542790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1520" height="173" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589805075057" />
-    <state width="1520" height="173" key="GridCell.Tab.0.left" timestamp="1589805075057">
+    <state width="916" height="212" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589963542790" />
+    <state width="916" height="212" key="GridCell.Tab.0.left" timestamp="1589963542790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1520" height="173" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589805075057" />
-    <state width="1520" height="173" key="GridCell.Tab.0.right" timestamp="1589805075057">
+    <state width="916" height="212" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589963542790" />
+    <state width="916" height="212" key="GridCell.Tab.0.right" timestamp="1589963542790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1520" height="173" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589805075057" />
-    <state width="938" height="314" key="GridCell.Tab.1.bottom" timestamp="1589311914014">
+    <state width="916" height="212" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589963542790" />
+    <state width="916" height="350" key="GridCell.Tab.1.bottom" timestamp="1589959475041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="314" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589311914014" />
-    <state width="938" height="314" key="GridCell.Tab.1.center" timestamp="1589311914014">
+    <state width="916" height="350" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589959475041" />
+    <state width="916" height="350" key="GridCell.Tab.1.center" timestamp="1589959475041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="314" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589311914014" />
-    <state width="938" height="314" key="GridCell.Tab.1.left" timestamp="1589311914014">
+    <state width="916" height="350" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589959475041" />
+    <state width="916" height="350" key="GridCell.Tab.1.left" timestamp="1589959475041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="314" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589311914014" />
-    <state width="938" height="314" key="GridCell.Tab.1.right" timestamp="1589311914014">
+    <state width="916" height="350" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589959475041" />
+    <state width="916" height="350" key="GridCell.Tab.1.right" timestamp="1589959475041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="314" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589311914014" />
+    <state width="916" height="350" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589959475041" />
     <state x="872" y="178" key="Maven.ArtifactSearchDialog" timestamp="1588689291214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -578,10 +660,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589184617595" />
-    <state x="1009" y="238" key="Vcs.Push.Dialog.v2" timestamp="1589552666203">
+    <state x="1009" y="238" key="Vcs.Push.Dialog.v2" timestamp="1589919199105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1009" y="238" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589552666203" />
+    <state x="1009" y="238" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589919199105" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1589184269089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -618,57 +700,61 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588842825877" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588866319310">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589916463214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588866319310" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589916463214" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpringNotes$AppTest_shouldAnswerWithTrue.ic" NAME="AppTest.shouldAnswerWithTrue Coverage Results" MODIFIED="1588836204528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.qa.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_deletePostByExistingId.ic" NAME="PostServiceUnitTest.deletePostByExistingId Coverage Results" MODIFIED="1588862226847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.qa.service.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_getAllPostsTest.ic" NAME="PostServiceUnitTest.getAllPostsTest Coverage Results" MODIFIED="1588859430129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.qa.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_deletePostByExistingId.ic" NAME="PostServiceUnitTest.deletePostByExistingId Coverage Results" MODIFIED="1588862226847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes__3_.ic" NAME="All in SpringNotes (3) Coverage Results" MODIFIED="1588841740097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_deletePostTest.ic" NAME="PostControllerIntegrationTest.deletePostTest Coverage Results" MODIFIED="1588845346205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.rest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceIntegrationTest_createPostTest.ic" NAME="PostServiceIntegrationTest.createPostTest Coverage Results" MODIFIED="1588865165095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes__1_.ic" NAME="All in SpringNotes (1) Coverage Results" MODIFIED="1589184409638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_createPostTest.ic" NAME="PostControllerIntegrationTest.createPostTest Coverage Results" MODIFIED="1588845203528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.rest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_NikolaosPaloukos__1_.ic" NAME="All in NikolaosPaloukos (1) Coverage Results" MODIFIED="1589963640952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_NikolaosPaloukos__3_.ic" NAME="All in NikolaosPaloukos (3) Coverage Results" MODIFIED="1589958925385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes__2_.ic" NAME="All in SpringNotes (2) Coverage Results" MODIFIED="1588858342545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_deletePostByNonExistingId.ic" NAME="PostServiceUnitTest.deletePostByNonExistingId Coverage Results" MODIFIED="1588862526092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.qa.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_createNoteTest.ic" NAME="PostServiceUnitTest.createNoteTest Coverage Results" MODIFIED="1588861073748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_findPostByIdTest.ic" NAME="PostServiceUnitTest.findPostByIdTest Coverage Results" MODIFIED="1588861686993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.qa.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_NikolaosPaloukos__2_.ic" NAME="All in NikolaosPaloukos (2) Coverage Results" MODIFIED="1589919334489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_getPostByID.ic" NAME="PostControllerIntegrationTest.getPostByID Coverage Results" MODIFIED="1588844972125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.qa.rest.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SpringNotes$PostControllerUnitTest_getPostByIdTest.ic" NAME="PostControllerUnitTest.getPostByIdTest Coverage Results" MODIFIED="1588842088863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.qa.rest.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceIntegrationTest_findPostByIdTest.ic" NAME="PostServiceIntegrationTest.findPostByIdTest Coverage Results" MODIFIED="1588865183613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.qa.service.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceIntegrationTest_createPostTest.ic" NAME="PostServiceIntegrationTest.createPostTest Coverage Results" MODIFIED="1588865165095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.qa.service.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes.ic" NAME="All in SpringNotes Coverage Results" MODIFIED="1589184275771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes__1_.ic" NAME="All in SpringNotes (1) Coverage Results" MODIFIED="1589184409638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes__3_.ic" NAME="All in SpringNotes (3) Coverage Results" MODIFIED="1588841740097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_findPostByIdTest.ic" NAME="PostServiceUnitTest.findPostByIdTest Coverage Results" MODIFIED="1588861686993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.qa.service.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_getAllPostsTest.ic" NAME="PostControllerIntegrationTest.getAllPostsTest Coverage Results" MODIFIED="1588844645361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.qa.rest.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_deletePostTest.ic" NAME="PostControllerIntegrationTest.deletePostTest Coverage Results" MODIFIED="1588845346205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.qa.rest.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes__2_.ic" NAME="All in SpringNotes (2) Coverage Results" MODIFIED="1588858342545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/SpringNotes$PostControllerIntegrationTest_createPostTest.ic" NAME="PostControllerIntegrationTest.createPostTest Coverage Results" MODIFIED="1588845203528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.qa.rest.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SpringNotes$PostServiceIntegrationTest_readPostsTest.ic" NAME="PostServiceIntegrationTest.readPostsTest Coverage Results" MODIFIED="1588865123267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.qa.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_NikolaosPaloukos.ic" NAME="All in NikolaosPaloukos Coverage Results" MODIFIED="1589961917259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceIntegrationTest_findPostByIdTest.ic" NAME="PostServiceIntegrationTest.findPostByIdTest Coverage Results" MODIFIED="1588865183613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$PostServiceUnitTest_createNoteTest.ic" NAME="PostServiceUnitTest.createNoteTest Coverage Results" MODIFIED="1588861073748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringNotes$All_in_SpringNotes.ic" NAME="All in SpringNotes Coverage Results" MODIFIED="1589184275771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
